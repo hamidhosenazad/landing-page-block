@@ -199,38 +199,6 @@
             "text": "var(--wp--preset--color--secondary)"
         },
         "blocks": {
-            "core/navigation": {
-                "color": {
-                    "text": "var(--wp--preset--color--secondary)"
-                },
-                "typography": {
-                    "fontFamily": "var(--wp--preset--font-family--montserrat)",
-                    "fontSize": "var(--wp--preset--font-size--small)",
-                    "fontWeight": "500"
-                },
-                "elements": {
-					"link": {
-						":hover": {
-							"typography": {
-								"textDecoration": "underline"
-							}
-						},
-						":focus": {
-							"typography": {
-								"textDecoration": "underline dashed"
-							}
-						},
-						":active": {
-							"typography": {
-								"textDecoration": "none"
-							}
-						},
-						"typography": {
-							"textDecoration": "none"
-						}
-					}
-				}
-            },
             "core/cover": {
                 "spacing": {
                     "margin": {

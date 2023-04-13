@@ -33,61 +33,88 @@ html {
   }
 }
 
-.is-style-landing-page-block-crimson-flat-button a::before{
+.is-style-landing-page-block-nav-flat-button a {
+  border-radius: 0 !important;
+  background-color: transparent;
+  font-family: var(--wp--preset--font-family--montserrat);
+  font-size: var(--wp--preset--font-size--small);
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+}
+
+.is-style-landing-page-block-sticky-button  a::before{
+  content: "";
+}
+.is-style-landing-page-block-sticky-button  {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  cursor: pointer;
+}
+
+
+
+.is-style-landing-page-block-nav-flat-button a:hover {
+  text-decoration: underline;
+}
+
+.is-style-landing-page-block-crimson-flat-button a::before {
   font-family: "Font Awesome 5 Free" !important;
   content: "\f0e0" !important;
   margin-right: 5px !important;
 }
 
-.is-style-landing-page-block-crimson-round-button a::before{
+.is-style-landing-page-block-crimson-round-button a::before {
   font-family: "Font Awesome 5 Free" !important;
   content: "\f144" !important;
   margin-right: 5px !important;
 }
 
-.is-style-landing-page-block-crimson-flat-button a{
+.is-style-landing-page-block-crimson-flat-button a {
   border-radius: 0 !important;
   background-color: var(--wp--preset--color--quaternary);
   letter-spacing: .5em;
   font-family: var(--wp--preset--font-family--montserrat);
   font-size: var(--wp--preset--font-size--small);
   font-weight: 600;
-  
+
 }
 
 .is-style-landing-page-block-crimson-round-button a {
- 
+
   background-color: var(--wp--preset--color--quaternary);
   letter-spacing: .5em;
   font-family: var(--wp--preset--font-family--montserrat);
   font-size: var(--wp--preset--font-size--small);
   font-weight: 600;
-  text-align: center; 
-  line-height: 24px; 
-  text-decoration: none; 
+  text-align: center;
+  line-height: 24px;
+  text-decoration: none;
 }
 
-.is-style-landing-page-block-white-flat-button a{
+.is-style-landing-page-block-white-flat-button a {
   border-radius: 0 !important;
   background-color: var(--wp--preset--color--secondary);
   letter-spacing: .5em;
   font-family: var(--wp--preset--font-family--montserrat);
   font-size: var(--wp--preset--font-size--small);
   font-weight: 600;
-  
+
 }
 
-.is-style-landing-page-block-crimson-flat-button a:hover{
+.is-style-landing-page-block-crimson-flat-button a:hover {
   background-color: var(--wp--preset--color--primary);
 }
 
-.is-style-landing-page-block-crimson-round-button a:hover{
+.is-style-landing-page-block-crimson-round-button a:hover {
   background-color: var(--wp--preset--color--primary);
 }
 
-.is-style-landing-page-block-white-flat-button a:hover{
+.is-style-landing-page-block-white-flat-button a:hover {
   background-color: var(--wp--preset--color--primary);
-  color:  var(--wp--preset--color--secondary) !important;
+  color: var(--wp--preset--color--secondary) !important;
 }
 
 body {
