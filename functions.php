@@ -77,6 +77,22 @@ function landing_page_block_register_block_styles() {
 			'label' => __( 'Sticky button', 'landing-page-block' ),
 		)
 	);
+
+	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
+		'core/heading',
+		array(
+			'name'  => 'landing-page-block-hero-heading',
+			'label' => __( 'Hero heading', 'landing-page-block' ),
+		)
+	);
+
+	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
+		'core/heading',
+		array(
+			'name'  => 'landing-page-block-footer-heading',
+			'label' => __( 'Footer heading', 'landing-page-block' ),
+		)
+	);
 }
 add_action( 'init', 'landing_page_block_register_block_styles' );
 
