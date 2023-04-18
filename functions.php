@@ -93,6 +93,14 @@ function landing_page_block_register_block_styles() {
 			'label' => __( 'Footer heading', 'landing-page-block' ),
 		)
 	);
+
+	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
+		'core/heading',
+		array(
+			'name'  => 'landing-page-block-feature-heading',
+			'label' => __( 'Feature heading', 'landing-page-block' ),
+		)
+	);
 }
 add_action( 'init', 'landing_page_block_register_block_styles' );
 

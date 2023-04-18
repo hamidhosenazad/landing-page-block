@@ -36,6 +36,12 @@ html {
   }
 }
 
+.is-style-landing-page-block-feature-heading {
+  color: var(--wp--preset--color--secondary) !important;
+  font-size: var(--wp--preset--font-size--x-large) !important;
+  font-family: var(--wp--preset--font-family--montserrat);
+}
+
 .is-style-landing-page-block-hero-heading {
   color: var(--wp--preset--color--quaternary) !important;
   font-size: var(--wp--preset--font-size--xx-large) !important;
@@ -152,6 +158,9 @@ body {
   .is-style-landing-page-block-footer-heading {
     font-size: 3rem !important;
   }
+  .is-style-landing-page-block-feature-heading {
+    font-size: var(--wp--preset--font-size--large) !important;
+  }
 }
 
 /* Adjust font size for even smaller screens */
@@ -161,5 +170,8 @@ body {
   }
   .is-style-landing-page-block-footer-heading {
     font-size: 2rem !important;
+  }
+  .is-style-landing-page-block-feature-heading {
+    font-size: var(--wp--preset--font-size--large) !important;
   }
 }
