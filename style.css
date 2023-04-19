@@ -25,9 +25,7 @@ with others.
 html {
   scroll-behavior: smooth;
 }
-*{
-  border: 1px solid white;
-}
+
 
 @media screen and (prefers-reduced-motion: reduce) {
 
@@ -159,7 +157,7 @@ body {
     font-size: 3rem !important;
   }
   .is-style-landing-page-block-feature-heading {
-    font-size: var(--wp--preset--font-size--large) !important;
+    font-size: 2rem !important;
   }
 }
 
@@ -172,6 +170,6 @@ body {
     font-size: 2rem !important;
   }
   .is-style-landing-page-block-feature-heading {
-    font-size: var(--wp--preset--font-size--large) !important;
+    font-size: 1rem !important;
   }
 }

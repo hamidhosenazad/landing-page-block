@@ -221,11 +221,6 @@
             "name": "footer",
             "title": "Footer",
             "area": "footer"
-        },
-        {
-            "name": "navigation",
-            "title": "Navigation",
-            "area": "uncategorized"
         }
     ]
 }
