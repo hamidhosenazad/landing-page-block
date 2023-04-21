@@ -104,29 +104,6 @@ function landing_page_block_register_block_styles() {
 }
 add_action( 'init', 'landing_page_block_register_block_styles' );
 
-/**
- * Registers block patterns.
- *
- * @since 1.0.0
- *
- * @return void
- */
-function landing_page_block_patterns() {
-
-	// Array of block pattern names.
-	$block_patterns = array(
-		'list-menu'
-	);
-
-	foreach ( $block_patterns as $block_pattern ) {
-		$pattern_file = get_theme_file_path( 'block-patterns/' . $block_pattern . '.php' );
-		register_block_pattern(
-			'landing-page-block/' . $block_pattern,
-			require $pattern_file
-		);
-	}
-}
-add_action( 'init', 'landing_page_block_patterns', 9 );
 
 /**
  * Add theme support for block styles.
@@ -141,3 +118,29 @@ function landing_page_block_setup()
     add_editor_style('style.css');
 }
 add_action('after_setup_theme', 'landing_page_block_setup');
+
+/**
+ * Registers block patterns.
+ *
+ * @since 1.0.0
+ *
+ * @return void
+ */
+function landing_page_block_register_block_patterns()
+{
+    // Array of block pattern names.
+    $block_patterns = array(
+        'hero-image',
+        '404-section',
+		'about-section'
+    );
+
+    foreach ($block_patterns as $block_pattern) {
+        $pattern_file = get_theme_file_path('block-patterns/' . $block_pattern . '.php');
+        register_block_pattern(
+            'landing-page-block/' . $block_pattern,
+            include $pattern_file
+        );
+    }
+}
+add_action('init', 'landing_page_block_register_block_patterns', 9);
