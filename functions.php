@@ -101,6 +101,7 @@ function landing_page_block_register_block_styles() {
 			'label' => __( 'Feature heading', 'landing-page-block' ),
 		)
 	);
+
 }
 add_action( 'init', 'landing_page_block_register_block_styles' );
 
@@ -144,3 +145,44 @@ function landing_page_block_register_block_patterns()
     }
 }
 add_action('init', 'landing_page_block_register_block_patterns', 9);
+
+/**
+ * Check if suggested plugins are active.
+ *
+ * @return mixed
+ */
+function landing_page_block_are_plugins_active()
+{
+    $csbt_plugin_availability=[1,1,1];
+    if (!class_exists('Popup_Maker')) {
+        $csbt_plugin_availability[0] = 0;
+    }
+    if (!class_exists('Countdown_Helper')) {
+        $csbt_plugin_availability[1] = 0;
+    }
+    if (!function_exists('create_outermost_icon_block_init')) {
+        $csbt_plugin_availability[2] = 0;
+    }
+    if ($csbt_plugin_availability[0]==0 || $csbt_plugin_availability[1]==0 || $csbt_plugin_availability[2]==0) {
+        add_action(
+            'admin_notices',
+            function () use ($csbt_plugin_availability) {
+                ?>
+                <div class="notice notice-warning is-dismissible">
+                    <?php
+                    if (isset($csbt_plugin_availability)) {
+                        if (!$csbt_plugin_availability[0]) {
+                            printf('<p style="' . esc_attr('display: inline-block;') . '">%2$s</p> <a href="' . esc_url('https://wordpress.org/plugins/popup-maker/') . '" target="' . esc_attr('_blank') . '">Install and Activate Pupop maker</a>', esc_attr('lpbt'), esc_html__('Landing page block theme recommends Popup maker plugin tobe active.', 'landing-page-block'));
+                        }
+                        if (!$csbt_plugin_availability[2]) {
+                            printf('<p style="' . esc_attr('display: inline-block;') . '">%2$s</p> <a href="' . esc_url('https://wordpress.org/plugins/icon-block/') . '" target="' . esc_attr('_blank') . '">Install and Activate The icon block</a>', esc_attr('lpbt'), esc_html__('Landing page block theme recommends The icon block plugin to be active.', 'landing-page-block'));
+                        }
+                    }
+                ?>
+                </div>
+                <?php
+            }
+        );
+    }
+}
+add_action('after_setup_theme', 'landing_page_block_are_plugins_active');

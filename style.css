@@ -34,6 +34,10 @@ html {
   }
 }
 
+svg{
+  color: var(--wp--preset--color--quaternary) !important;
+}
+
 .is-style-landing-page-block-feature-heading {
   color: var(--wp--preset--color--secondary) !important;
   font-size: var(--wp--preset--font-size--x-large) !important;
