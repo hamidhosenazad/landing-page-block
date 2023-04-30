@@ -45,6 +45,24 @@ https://wordpress.org/themes/coming-soon-block/
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-*Public domain images:
+* Public domain images:
 https://stocksnap.io/photo/macbook-laptop-PY7EWSKYR3
+https://stocksnap.io/photo/business-presenting-XDAR6MIG75
 License URI: https://stocksnap.io/license
+
+* Public domain images:
+https://stocksnap.io/photo/macbook-laptop-PY7EWSKYR3
+https://stocksnap.io/photo/business-presenting-XDAR6MIG75
+License URI: https://stocksnap.io/license
+
+* Fonts used:
+
+Montserrat by Julieta Ulanovsky, Sol Matas, Juan Pablo del Peral, Jacques Le Bailly
+Copyright: The Montserrat Project Authors
+Licence: Open Font License. https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL
+
+Nunito Sans Vernon Adams, Jacques Le Bailly, Manvel Shmavonyan, Alexei Vanyashin
+Copyright: Nunito Sans Project Authors
+Licence: Open Font License. https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL
+
+
