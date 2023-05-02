@@ -165,11 +165,11 @@ function landing_page_block_are_plugins_active()
             'admin_notices',
             function () use ($lpbt_plugin_availability) {
                 ?>
-                <div data-dismissible="disable-done-notice-forever" class="notice notice-warning is-dismissible">
+                <div class="notice notice-warning is-dismissible">
                     <?php
                     if (isset($lpbt_plugin_availability)) {
                         if (!$lpbt_plugin_availability[0]) {
-                            printf('<p style="' . esc_attr('display: inline-block;') . '">%2$s</p> <a href="' . esc_url('https://wordpress.org/plugins/popup-maker/') . '" target="' . esc_attr('_blank') . '">Install and Activate Pupop maker</a>', esc_attr('lpbt'), esc_html__('Landing page block theme recommends Popup maker plugin tobe active.', 'landing-page-block'));
+                            printf('<p style="' . esc_attr('display: inline-block;') . '">%2$s</p> <a href="' . esc_url('https://wordpress.org/plugins/popup-maker/') . '" target="' . esc_attr('_blank') . '">Install and Activate Pupop maker</a>', esc_attr('lpbt'), esc_html__('Landing page block theme recommends Popup maker plugin to be active.', 'landing-page-block'));
                         }
                         if (!$lpbt_plugin_availability[1]) {
                             printf('<p style="' . esc_attr('display: inline-block;') . '">%2$s</p> <a href="' . esc_url('https://wordpress.org/plugins/icon-block/') . '" target="' . esc_attr('_blank') . '">Install and Activate The icon block</a>', esc_attr('lpbt'), esc_html__('Landing page block theme recommends The icon block plugin to be active.', 'landing-page-block'));
