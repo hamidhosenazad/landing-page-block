@@ -14,8 +14,8 @@ return array(
     'categories' => array( 'landing-page-block-patterns' ),
     'inserter'   => true,
     'content'    => '
-	<!-- wp:cover {"url":"' . esc_url(get_theme_file_uri('assets/images/StockSnap_PY7EWSKYR3.jpg')) . '","id":164,"dimRatio":80,"overlayColor":"primary","contentPosition":"center center","tagName":"header","className":"hero","style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}}} -->
-<header class="wp-block-cover hero" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><span aria-hidden="true" class="wp-block-cover__background has-primary-background-color has-background-dim-80 has-background-dim"></span><img class="wp-block-cover__image-background wp-image-164" alt="" src="' . esc_url(get_theme_file_uri('assets/images/StockSnap_PY7EWSKYR3.jpg')) . '" data-object-fit="cover"/><div class="wp-block-cover__inner-container"><!-- wp:group {"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
+	<!-- wp:cover {"url":"http://localhost/wordpress/landing-page-block/wp-content/themes/landing-page-block/assets/images/StockSnap_PY7EWSKYR3.jpg","id":164,"dimRatio":80,"overlayColor":"primary","contentPosition":"center center","tagName":"main","className":"hero","style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}}} -->
+<main class="wp-block-cover hero" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><span aria-hidden="true" class="wp-block-cover__background has-primary-background-color has-background-dim-80 has-background-dim"></span><img class="wp-block-cover__image-background wp-image-164" alt="" src="http://localhost/wordpress/landing-page-block/wp-content/themes/landing-page-block/assets/images/StockSnap_PY7EWSKYR3.jpg" data-object-fit="cover"/><div class="wp-block-cover__inner-container"><!-- wp:group {"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
 <div class="wp-block-group"><!-- wp:site-logo {"width":180,"shouldSyncIcon":false,"className":"is-style-default"} /--></div>
 <!-- /wp:group -->
 
@@ -41,7 +41,7 @@ return array(
 <!-- /wp:social-links --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
-<!-- /wp:group --></div></header>
+<!-- /wp:group --></div></main>
 <!-- /wp:cover -->
 	',
 );

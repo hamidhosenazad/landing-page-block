@@ -2,14 +2,13 @@
 Theme Name: Landing Page Block
 Author: Hamid Azad
 Author URI: https://github.com/hamidhosenazad/ 
-Tags: full-site-editing
-Text Domain: coming-soon-block
+Text Domain: landing-page-block
 Requires at least: 5.9
 Requires PHP: 7.4
-Tested up to: 6.0
-Version: 1.0.2
-Description: Landing Page block theme is a one page full site editing block theme with countdown timer
-Tags: full-site-editing,one-page, block-theme,landing-page
+Tested up to: 6.2
+Version: 1.0.5
+Description: The Landing Page block theme is an FSE (Full Site Editing) theme specially designed for landing pages and agencies.
+Tags: block-styles,full-site-editing,featured-images
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -32,10 +31,6 @@ html {
   html {
     scroll-behavior: auto;
   }
-}
-
-svg{
-  color: var(--wp--preset--color--quaternary) !important;
 }
 
 .is-style-landing-page-block-feature-heading {

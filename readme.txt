@@ -3,17 +3,18 @@ Contributors: Hamid Azad
 Tested up to: 6.2
 Requires at least: 5.9
 Requires PHP: 7.4
-Version: 1.0.2
+Version: 1.0.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Copyright: Hamid Azad
 
-A one page full site editing landing page block theme with countdown 
+The Landing Page block theme is an FSE (Full Site Editing) theme specially designed for landing pages and agencies.
 
 == Changelog ==
 1.0.0 Initial release
 1.0.1 Added and registered new block patterns
 1.0.2 Fixed text domain issue
+1.0.3 Fixed console log warning and created blog,single,archive template
 
 == Licence ==
 Landing Page Block is distributed under the terms of the GNU GPL.
@@ -64,5 +65,13 @@ Licence: Open Font License. https://scripts.sil.org/cms/scripts/page.php?site_id
 Nunito Sans Vernon Adams, Jacques Le Bailly, Manvel Shmavonyan, Alexei Vanyashin
 Copyright: Nunito Sans Project Authors
 Licence: Open Font License. https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL
+
+* Recommendation:
+
+Landing page block theme recommends Popup maker plugin to be active. Here is the installation
+link https://wordpress.org/plugins/popup-maker/
+
+Landing page block theme recommends The icon block plugin to be active.  Here is the installation
+link https://wordpress.org/plugins/icon-block/
 
 
